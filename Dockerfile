@@ -14,4 +14,8 @@ WORKDIR /home/keycloak
 
 COPY --chown=1000:0 / /home/keycloak
 
-CMD yarn start
+# Make start.sh executable
+RUN chmod +x /home/keycloak/start.sh
+
+# RUN start.sh
+CMD ["/home/keycloak/start.sh"]
