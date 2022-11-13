@@ -6,8 +6,6 @@ RUN npm install -g yarn
 
 USER 1000
 
-EXPOSE 8080
-
 WORKDIR /home/keycloak
 
 COPY --chown=1000:0 / /home/keycloak
