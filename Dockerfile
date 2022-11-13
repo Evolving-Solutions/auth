@@ -8,8 +8,6 @@ USER 1000
 
 EXPOSE 8080
 
-EXPOSE 8443
-
 WORKDIR /home/keycloak
 
 COPY --chown=1000:0 / /home/keycloak
